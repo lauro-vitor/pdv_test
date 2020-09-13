@@ -1,0 +1,25 @@
+
+.form_row {
+    margin: 30px 10px;
+}
+.input_text {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.btn_default {
+    background-color: #0275d8;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    text-decoration: none;
+}
+.btn_default:hover {
+    opacity: 0.7;
+}

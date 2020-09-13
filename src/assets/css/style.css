@@ -1,0 +1,113 @@
+@import "./table.css";
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    position: fixed;
+    background: #0275d8;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+.left_area h3 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+.left_area span {
+    margin-left: 5px;
+}
+label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor:pointer;
+    left:300px;
+    font-size: 25px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+.logout_btn{
+    padding: 5px;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 24px;
+    font-weight: 600;
+    color:#f7f7f7;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+/*  background: #2f323a;*/
+.sidebar{
+    background: #0275d8;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+}
+.sidebar  .profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+.sidebar h4 {
+    color: #f7f7f7;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.sidebar a {
+   color: #f7f7f7;
+   display: block;
+   width: 100%;
+   padding: 20px 0 20px 40px;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-weight: 60px;
+   transition: 0.3s;
+   transition-property: background;
+}
+.sidebar a:hover {
+    background: #80cde5;
+}
+.sidebar i {
+    padding-right: 20px;
+}
+
+#check:checked ~ .sidebar {
+    left: -190px;
+}
+#check:checked ~ .sidebar a span {
+    display: none;
+}
+#check:checked ~ .sidebar a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+.container {
+    float:left;
+}
+.content {
+   position:fixed;
+   width: 80%;
+   left: 260px;
+   top: 80px;
+}
+#check:checked ~ .content {
+   left: 70px;
+}
+#check {
+    display: none;
+}
